@@ -2,3 +2,4 @@ model,best
 CUDA,2734824610
 pthread,26125498122
 OpenMP,35820980797
+Serial (No Threading),325932565762
