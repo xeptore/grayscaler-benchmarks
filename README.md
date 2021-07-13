@@ -15,17 +15,32 @@
 #### CPU
 
 ```txt
-CPU:       Info: Quad Core model: Intel Core i7-4790K bits: 64 type: MT MCP arch: Haswell rev: 3 cache: L2: 8 MiB
-           flags: avx avx2 lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx bogomips: 63873
-           Speed: 4333 MHz min/max: 800/4400 MHz Core speeds (MHz): 1: 4333 2: 4043 3: 4323 4: 4126 5: 4346 6: 4282
-           7: 4277 8: 4339
+CPU:       Info: Quad Core
+           model: Intel Core i7-4790K
+           bits: 64
+           type: MT MCP
+           arch: Haswell
+           rev: 3
+           cache:
+              L2: 8 MiB
+           flags: avx avx2 lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+           bogomips: 63873
+           Speed: 4333 MHz
+           min/max: 800/4400 MHz
+           Core speeds (MHz):
+              1: 4333 2: 4043 3: 4323 4: 4126
+              5: 4346 6: 4282 7: 4277 8: 4339
 ```
 
 #### RAM
 
 ```txt
 Memory:    RAM: total: 11.54 GiB
-           Array-1: capacity: 32 GiB slots: 4 EC: None max-module-size: 8 GiB note: est.
+           Array-1: capacity: 32 GiB
+           slots: 4
+           EC: None
+           max-module-size: 8 GiB
+           note: est.
            Device-1: ChannelA-DIMM0 size: No Module Installed
            Device-2: ChannelA-DIMM1 size: 4 GiB speed: 1333 MT/s type: DDR3
            Device-3: ChannelB-DIMM0 size: No Module Installed
@@ -58,7 +73,11 @@ Device 0:
   Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
   Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
 
-deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 11.3, CUDA Runtime Version = 11.3, NumDevs = 1
+deviceQuery
+CUDA Driver = CUDART
+CUDA Driver Version = 11.3
+CUDA Runtime Version = 11.3
+NumDevs = 1
 Result = PASS
 ```
 
