@@ -111,6 +111,24 @@ Kernel: 5.12.14 x86_64
   cmake version 3.20.5
   ```
 
+## Algorithm
+
+The overall algorithm of all implementation models is as the following:
+
+1. Read the input image
+2. Load the entire image into memory (RAM or GPU DRAM)
+3. Start timer
+4. Transform image (launch threads in multi-threaded implementation)
+5. Gather results
+6. Stop timer
+7. Print elapsed execution time
+8. Write results to output image file
+9. Clean any allocated memory
+
+## Limitations
+
+Current implementation uses `libjpeg` for reading, manipulating, and writing jpeg images.
+
 ## Results
 
 Results are average of _only processing time_ of executing the same implementation with different configuration parameters `2000` times:
