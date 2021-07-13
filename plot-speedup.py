@@ -19,5 +19,5 @@ fig = px.bar(
     facet_row_spacing=0.1
 )
 fig.update_layout(font_size=22)
-fig.update_yaxes(tickvals=np.arange(0, 351, 50))
+fig.update_yaxes(tickvals=np.arange(0, 351, 25))
 fig.write_image("./speedup.png")
