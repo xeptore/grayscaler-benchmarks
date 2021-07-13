@@ -14,11 +14,10 @@ fig = px.bar(
     title="Best Execution Times Per Parallelism Model",
     x="model",
     y="best",
-    labels={"model": "Parallelism Platform Model", "best": "Best Execution Time (seconds)"},
-    # range_x=[1, 20],
-    # range_y=[0, 50],
-    # facet_row_spacing=0.1
+    labels={"model": "Parallelism Model", "best": "Best Execution Time (seconds)"},
+    range_y=[0, 350],
+    facet_row_spacing=0.1
 )
 fig.update_layout(font_size=22)
-# fig.update_xaxes(tickvals=np.arange(1, 21, 1))
-fig.write_image("./benchmark.png")
+fig.update_yaxes(tickvals=np.arange(0, 351, 50))
+fig.write_image("./speedup.png")
